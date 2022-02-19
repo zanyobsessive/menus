@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "start": "hexo server",
+    "build": "hexo clean && hexo deploy",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
@@ -12,6 +13,8 @@
     "version": "6.0.0"
   },
   "dependencies": {
+    "@aws-amplify/api": "^4.0.32",
+    "@aws-amplify/pubsub": "^4.2.8",
     "hexo": "^6.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
